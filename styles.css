@@ -1,0 +1,500 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', sans-serif;
+    color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: radial-gradient(circle at 20% 40%, #0b002e, #000000 80%);
+    overflow: hidden;
+}
+
+.background {
+    background: linear-gradient(135deg, #030d16, #081422, #0f1b33, #1b293a, #293544);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.planet-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.planet {
+    background-color: rgba(255, 255, 255, 0.267);
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.planet1 {
+    width: 200px;
+    height: 200px;
+    background-image: url('icons/planet4.svg');
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.planet2 {
+    width: 150px;
+    height: 150px;
+    background-image: url('icons/planet1.svg');
+    background-size: cover;
+    background-position: center;
+    top: 60%; 
+    left: 35%;
+    animation: float 8s ease-in-out infinite;
+}
+
+.planet3 {
+    width: 100px;
+    height: 100px;
+    background-image: url('icons/planet6.svg');
+    background-size: cover;
+    background-position: center;
+    top: 70%;
+    left: 60%;
+    animation: float 7s ease-in-out infinite;
+}
+
+.planet4 {
+    width: 180px;
+    height: 180px;
+    background-image: url('icons/planet2.svg');
+    background-size: cover;
+    background-position: center;
+    top: 30%;
+    left: 65%;
+    animation: float 9s ease-in-out infinite;
+}
+
+.planet5 {
+    width: 45px;
+    height: 45px;
+    background-image: url('icons/planet3.svg');
+    background-size: cover;
+    background-position: center;
+    top: 26%;
+    left: 57%;
+    animation: float 9s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle 5s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.2;
+    }
+}
+
+#astronaut {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    transition: transform 10s ease-in-out;
+    animation: spin 18s linear infinite;
+    z-index: 2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo 2', sans-serif;
+    color: #ffffff;
+    background: #000000;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(135deg, #030d16, #081422, #0f1b33, #1b293a, #293544);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00bcd4; /* Обновляем цвет навигации */
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    padding-top: 80px;
+    width: 90%; /* Увеличиваем ширину контента */
+    margin: 0 auto; /* Центрируем контент */
+}
+
+.section {
+    min-height: 80vh; /* Сокращаем высоту блоков */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Увеличиваем ширину блоков */
+}
+
+.content {
+    max-width: 1200px; /* Увеличиваем максимальную ширину контента */
+    width: 100%; /* Увеличиваем ширину контента */
+    z-index: 2;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    font-size: 48px;
+    text-shadow: 
+        0 0 5px #00bcd4,
+        0 0 10px #00bcd4,
+        0 0 20px #00bcd4,
+        0 0 30px #00ffff,
+        0 0 40px #00ffff,
+        0 0 50px #00ffff,
+        0 0 60px #00ffff; /* Неоновая подсветка */
+    text-align: center; /* Центрирование заголовков */
+}
+
+p, ul, ol {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+ul, ol {
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 40px; /* Увеличиваем отступ слева */
+    max-width: 100%; /* Увеличиваем ширину списка */
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 36px;
+    }
+
+    p, ul, ol {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    p, ul, ol {
+        font-size: 14px;
+    }
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #e6e6e6;
+    padding: 10px 0; /* Добавляем вертикальные отступы для каждого элемента */
+    width: 100%; /* Увеличиваем ширину элементов списка */
+}
+
+.custom-number {
+    width: 30px;
+    height: 30px;
+    background-color: #00bcd4; /* Ваш стиль */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.7);
+    flex-shrink: 0; /* Предотвращает сжатие цифр */
+}
+
+.custom-list a {
+    color: #00bcd4;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-left: 5px; /* Добавляем отступ слева */
+}
+
+.custom-list a:hover {
+    color: #00ffff;
+}
+
+.important-info {
+    background-color: #00bcd4; /* Обновляем цвет фона */
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.7); /* Добавляем тень */
+}
+
+.icon-info {
+    background-color: #ffffff;
+    color: #00bcd4; /* Цвет значка соответствует цвету стиля */
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    font-style: normal;
+    flex-shrink: 0; /* Предотвращает сжатие значка */
+}
+
+.section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.content {
+    max-width: 800px; /* Ограничиваем ширину контента для лучшей структуры */
+    width: 100%;
+    z-index: 2;
+    padding: 20px;
+    background: rgba(29, 148, 163, 0.1); /* Добавляем лёгкий фон для выделения */
+    border-radius: 50px; /* Закругляем углы */
+}
+
+h2 {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 30px; /* Увеличиваем отступ снизу для заголовка */
+    text-shadow: 
+        0 0 5px #00bcd4,
+        0 0 10px #00bcd4,
+        0 0 20px #00bcd4,
+        0 0 30px #00ffff,
+        0 0 40px #00ffff,
+        0 0 50px #00ffff,
+        0 0 60px #00ffff;
+    text-align: center;
+}
+
+.tokenomics-text {
+    text-align: left;
+}
+
+.tokenomics-text p {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #e6e6e6;
+}
+
+.token-address-btn {
+    display: inline-block;
+    background-color: #00bcd4;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 
+        0 0 5px #00bcd4,
+        0 0 10px #00bcd4,
+        0 0 20px #00bcd4,
+        0 0 30px #00ffff,
+        0 0 40px #00ffff,
+        0 0 50px #00ffff,
+        0 0 60px #00ffff;
+}
+
+
+
+
+.roadmap-path {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: transparent;
+}
+
+.roadmap-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.roadmap-item p {
+    font-size: 18px;
+    flex: 1;
+    text-align: left;
+    color: #e6e6e6;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.roadmap-point {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 1;
+    box-shadow: 0 0 15px 5px rgba(0, 188, 212, 0.7);
+    animation: pulse 2s infinite;
+    margin-right: 15px; /* Подвиньте влево, чтобы линия была по центру */
+}
+
+.roadmap-item.completed .roadmap-point,
+.roadmap-item.current .roadmap-point {
+    background-color: #00ff00; /* Зеленый цвет для завершенных и текущего пунктов */
+    box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.7);
+}
+
+.roadmap-path:before {
+    content: '';
+    position: absolute;
+    left: 16px; /* Подвиньте линию влево, чтобы она была по центру чисел */
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #00ff00 0%, #00ff00 30%, #00bcd4 30%, #00bcd4 100%); /* Зеленая линия до третьего пункта */
+    z-index: 0;
+    transform: translateX(50%);
+}
+
+
+/* Добавление стилей для выбора языка */
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 100px; /* Добавляем отступ справа */
+    z-index: 1001;
+}
+
+#language-btn {
+    background-color: #00bcd4b3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#language-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    background-color: #00ffff65;
+    border-radius: 5px;
+    display: none; /* Скрываем список языков по умолчанию */
+}
+
+#language-list li {
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+}
+
+#language-list li:hover {
+    background-color: #00bcd4b3;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 48px;
+    text-shadow: 
+        0 0 5px #00bcd4,
+        0 0 10px #00bcd4,
+        0 0 20px #00bcd4,
+        0 0 30px #00ffff,
+        0 0 40px #00ffff,
+        0 0 50px #00ffff,
+        0 0 60px #00ffff; /* Неоновая подсветка */
+    text-align: center; /* Центрирование заголовков */
+}
