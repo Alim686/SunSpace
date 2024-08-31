@@ -6,12 +6,6 @@ html, body {
     touch-action: manipulation;
 }
 
-/* Скрываем навигационное меню на мобильных устройствах */
-@media screen and (max-width: 768px) {
-    .navbar a {
-        display: none;
-    }
-}
 
 
 body {
@@ -190,7 +184,8 @@ body {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    width: 100%; /* Увеличиваем ширину блоков */
+    margin: 0 5%;
+    width: calc(100% - 10%);
 }
 
 .content {
