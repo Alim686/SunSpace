@@ -298,7 +298,7 @@ ul, ol {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
 }
 
@@ -306,7 +306,7 @@ ul, ol {
     max-width: 800px; /* Ограничиваем ширину контента для лучшей структуры */
     width: 100%;
     z-index: 2;
-    padding: 10px;
+    padding: 20px;
     background: rgba(29, 148, 163, 0.1); /* Добавляем лёгкий фон для выделения */
     border-radius: 50px; /* Закругляем углы */
 }
