@@ -182,7 +182,7 @@ body {
 .content-wrapper {
     position: relative;
     z-index: 1;
-    padding-top: 80px;
+    padding-top: 40px;
     width: 90%; /* Увеличиваем ширину контента */
     margin: 0 auto; /* Центрируем контент */
 }
@@ -193,7 +193,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 2%;
     width: 100%; /* Увеличиваем ширину блоков */
 }
 
