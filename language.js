@@ -148,7 +148,7 @@ function updateContent(language) {
         }
         const address = section.querySelector('.token-address-btn');
         if (address) {
-            address.textContent = 'CA: ' + sectionData.address;
+            address.textContent = sectionData.address;
         }
         const roadmapItems = section.querySelectorAll('.roadmap-item p');
         if (roadmapItems.length > 0) {

@@ -6,6 +6,16 @@ html, body {
     touch-action: manipulation;
 }
 
+@media (max-width: 768px) {
+    .content-wrapper {
+        width: 92%; /* Убедитесь, что ширина также составляет 92% на мобильных устройствах */
+        padding: 0 4%; /* Добавьте отступ, чтобы контент не касался краев экрана */
+    }
+    .section {
+        margin: 0 4%; /* Обеспечьте одинаковые отступы с обеих сторон */
+    }
+}
+
 
 
 body {
@@ -184,8 +194,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    margin: 0 5%;
-    width: calc(100% - 10%);
+    width: 100%; /* Увеличиваем ширину блоков */
 }
 
 .content {
