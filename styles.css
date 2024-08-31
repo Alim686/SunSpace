@@ -148,14 +148,7 @@ body {
     animation: spin 18s linear infinite;
     z-index: 2;
 }
-#spaceship {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    transition: transform 10s ease-in-out;
-    animation: spin 18s linear infinite;
-    z-index: 1000;
-}
+
 
 
 body {
