@@ -159,30 +159,6 @@ body {
     z-index: -1;
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    background: linear-gradient(135deg, #030d16, #081422, #0f1b33, #1b293a, #293544);
-    display: flex;
-    justify-content: center;
-    z-index: 1000;
-}
-
-.navbar a {
-    margin: 0 15px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.navbar a:hover {
-    color: #00bcd4; /* Обновляем цвет навигации */
-}
-
 .content-wrapper {
     position: relative;
     z-index: 1;
@@ -449,52 +425,91 @@ h2 {
 }
 
 
-/* Добавление стилей для выбора языка */
+/* Основные стили для навигации */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #030d16, #081422, #0f1b33, #1b293a, #293544);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #00bcd4; /* Обновляем цвет навигации */
+}
+
 .language-selector {
-    position: absolute;
-    top: 20px;
-    right: 100px; /* Добавляем отступ справа */
-    z-index: 1001;
+    position: relative;
 }
 
 #language-btn {
-    background-color: #00bcd4b3;
-    color: white;
+    background-color: #1f2833;
+    color: #66fcf1;
     border: none;
-    padding: 5px 10px;
+    padding: 8px 12px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 #language-list {
-    list-style: none;
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #1f2833;
+    list-style-type: none;
     padding: 0;
-    margin: 10px 0 0 0;
-    background-color: #00ffff65;
-    border-radius: 5px;
-    display: none; /* Скрываем список языков по умолчанию */
+    margin: 0;
+    border: 1px solid #66fcf1;
 }
 
 #language-list li {
-    padding: 5px 10px;
+    padding: 8px 12px;
     cursor: pointer;
-    color: white;
 }
 
 #language-list li:hover {
-    background-color: #00bcd4b3;
+    background-color: #66fcf1;
+    color: #1f2833;
 }
 
-h2 {
-    margin-bottom: 20px;
-    font-size: 48px;
-    text-shadow: 
-        0 0 5px #00bcd4,
-        0 0 10px #00bcd4,
-        0 0 20px #00bcd4,
-        0 0 30px #00ffff,
-        0 0 40px #00ffff,
-        0 0 50px #00ffff,
-        0 0 60px #00ffff; /* Неоновая подсветка */
-    text-align: center; /* Центрирование заголовков */
+/* Адаптивные стили для экранов шириной до 768px */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .language-selector {
+        margin-top: 10px;
+        width: 100%;
+        text-align: right;
+    }
+
+    #language-btn {
+        width: 100%;
+        text-align: right;
+    }
+
+    #language-list {
+        width: 100%;
+        left: auto;
+        right: 0;
+    }
 }
