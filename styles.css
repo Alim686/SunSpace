@@ -173,7 +173,7 @@ body {
 .content-wrapper {
     position: relative;
     z-index: 1;
-    padding-top: 20px;
+    padding-top: 10px;
     width: 98%; /* Увеличиваем ширину контента */
     margin: 0 auto; /* Центрируем контент */
 }
