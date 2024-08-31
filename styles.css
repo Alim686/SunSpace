@@ -184,15 +184,26 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+    margin: 2%;
     width: 100%; /* Увеличиваем ширину блоков */
 }
 
 .content {
-    max-width: 1200px; /* Увеличиваем максимальную ширину контента */
-    width: 94%; /* Увеличиваем ширину контента */
+    max-width: 1200px;
+    width: 94%;
     padding: 3%;
     z-index: 2;
+    position: relative;
+    animation: floatContent 6s ease-in-out infinite; /* Добавляем анимацию парения */
+}
+
+@keyframes floatContent {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Блок будет плавно подниматься и опускаться */
+    }
 }
 
 h1, h2 {

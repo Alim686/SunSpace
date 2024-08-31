@@ -37,3 +37,22 @@ document.addEventListener('DOMContentLoaded', () => {
     moveAstronaut();
     setInterval(moveAstronaut, 10000); // Перемещение каждые 20 секунд
 });
+
+
+
+document.addEventListener('click', function(event) {
+    const content = document.querySelector('.content');
+    const maxPressure = 20; // Максимальное смещение при "давлении"
+    
+    // Получаем координаты нажатия
+    const xPressure = (event.clientX / window.innerWidth - 0.5) * maxPressure;
+    const yPressure = (event.clientY / window.innerHeight - 0.5) * maxPressure;
+    
+    // Применяем смещение к блоку .content
+    content.style.transform = `translate(${xPressure}px, ${yPressure}px)`;
+    
+    // Через 200 мс возвращаем блок в исходное состояние
+    setTimeout(() => {
+        content.style.transform = '';
+    }, 200);
+});
