@@ -184,8 +184,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 3%;
-    width: 94%; /* Увеличиваем ширину блоков */
+    
+    width: 100%; /* Увеличиваем ширину блоков */
 }
 
 .content {
