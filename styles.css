@@ -195,6 +195,7 @@ body {
     z-index: 2;
     position: relative;
     animation: floatContent 6s ease-in-out infinite; /* Добавляем анимацию парения */
+
 }
 
 @keyframes floatContent {
@@ -202,7 +203,7 @@ body {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px); /* Блок будет плавно подниматься и опускаться */
+        transform: translateY(-20px); /* Блок будет плавно подниматься и опускаться */
     }
 }
 
