@@ -1,5 +1,6 @@
 html, body {
     max-width: 100%;
+    padding: 10px 10% 10px 10%;
     overflow-x: hidden;
     /* Prevent zooming */
     -ms-touch-action: manipulation;
