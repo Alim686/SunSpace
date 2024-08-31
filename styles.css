@@ -6,6 +6,13 @@ html, body {
     touch-action: manipulation;
 }
 
+/* Скрываем навигационное меню на мобильных устройствах */
+@media screen and (max-width: 768px) {
+    .navbar a {
+        display: none;
+    }
+}
+
 
 body {
     margin: 0;
