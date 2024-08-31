@@ -131,8 +131,8 @@ body {
 
 #astronaut {
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     transition: transform 10s ease-in-out;
     animation: spin 18s linear infinite;
     z-index: 2;
@@ -511,5 +511,12 @@ h2 {
         width: 100%;
         left: auto;
         right: 0;
+    }
+}
+
+/* Скрываем навигационное меню на мобильных устройствах */
+@media screen and (max-width: 768px) {
+    .navbar a {
+        display: none;
     }
 }
