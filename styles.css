@@ -182,7 +182,7 @@ body {
 .content-wrapper {
     position: relative;
     z-index: 1;
-    padding-top: 40px;
+    padding-top: 20px;
     width: 90%; /* Увеличиваем ширину контента */
     margin: 0 auto; /* Центрируем контент */
 }
@@ -199,7 +199,8 @@ body {
 
 .content {
     max-width: 1200px; /* Увеличиваем максимальную ширину контента */
-    width: 100%; /* Увеличиваем ширину контента */
+    width: 94%; /* Увеличиваем ширину контента */
+    padding: 3%;
     z-index: 2;
 }
 
@@ -225,7 +226,7 @@ p, ul, ol {
 ul, ol {
     text-align: left;
     margin: 0 auto;
-    padding-left: 40px; /* Увеличиваем отступ слева */
+    padding-left: 4px; /* Увеличиваем отступ слева */
     max-width: 100%; /* Увеличиваем ширину списка */
 }
 
