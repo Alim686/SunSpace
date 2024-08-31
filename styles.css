@@ -1,35 +1,11 @@
 html, body {
     max-width: 100%;
-    padding: 10px 10% 10px 10%;
     overflow-x: hidden;
     /* Prevent zooming */
     -ms-touch-action: manipulation;
     touch-action: manipulation;
 }
 
-@media (max-width: 768px) {
-    .content-wrapper {
-        width: 100%; /* Убедитесь, что ширина также составляет 92% на мобильных устройствах */
-        padding: 0 20% 0 0; /* Добавьте отступ, чтобы контент не касался краев экрана */
-        margin: 0 20% 0 0;
-    }
-    .section {
-        margin: 0 20% 0 0; /* Обеспечьте одинаковые отступы с обеих сторон */
-        padding: 0 20% 0 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .content-wrapper {
-        width: 100%; /* Убедитесь, что ширина также составляет 92% на мобильных устройствах */
-        padding: 0 20% 0 0; /* Добавьте отступ, чтобы контент не касался краев экрана */
-        margin: 0 20% 0 0;
-    }
-    .section {
-        margin: 0 20% 0 0; /* Обеспечьте одинаковые отступы с обеих сторон */
-        padding: 0 20% 0 0;
-    }
-}
 
 
 
@@ -245,26 +221,7 @@ ul, ol {
     max-width: 100%; /* Увеличиваем ширину списка */
 }
 
-/* Адаптивный дизайн */
-@media (max-width: 768px) {
-    h1, h2 {
-        font-size: 24px;
-    }
 
-    p, ul, ol {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    h1, h2 {
-        font-size: 18px;
-    }
-
-    p, ul, ol {
-        font-size: 12px;
-    }
-}
 
 .custom-list {
     list-style: none;
