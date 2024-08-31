@@ -1,4 +1,4 @@
-// Контент на трёх языках
+// Объект с переводами для трёх языков
 const translations = {
     en: {
         "description": {
@@ -127,7 +127,7 @@ function updateContent(language) {
     const contentSections = document.querySelectorAll('.section');
     contentSections.forEach(section => {
         const id = section.id;
-        const sectionData = content[language][id];
+        const sectionData = translations[language][id];
         section.querySelector('h1, h2').textContent = sectionData.title;
         const pElement = section.querySelector('p:not(.important-info)');
         if (pElement) {
@@ -159,28 +159,35 @@ function updateContent(language) {
     });
 }
 
-// Обработчик клика на кнопке переключения языка
+// Обработчик клика по основной кнопке
 document.getElementById('language-btn').addEventListener('click', function() {
-    const languageList = document.getElementById('language-list');
-    if (languageList.style.display === 'none' || languageList.style.display === '') {
-        languageList.style.display = 'block';
+    const languageOptions = document.getElementById('language-options');
+    const languageSelector = document.querySelector('.language-selector');
+
+    // Переключение классов для анимации расширения
+    languageSelector.classList.toggle('expanded');
+    
+    if (languageSelector.classList.contains('expanded')) {
+        languageOptions.classList.add('expanded');
     } else {
-        languageList.style.display = 'none';
+        languageOptions.classList.remove('expanded');
     }
 });
 
-// Обработчик клика по элементам выпадающего списка языков
-document.querySelectorAll('#language-list li').forEach(function(langItem) {
+// Обработчик выбора языка
+document.querySelectorAll('.lang-option').forEach(function(langItem) {
     langItem.addEventListener('click', function() {
         const selectedLang = this.getAttribute('data-lang');
-        document.getElementById('language-btn').textContent = selectedLang.toUpperCase();
-        document.getElementById('language-list').style.display = 'none';
+        document.querySelector('.btn-text').textContent = selectedLang.toUpperCase();
+        const languageOptions = document.getElementById('language-options');
+        const languageSelector = document.querySelector('.language-selector');
+        languageOptions.classList.remove('expanded');
+        languageSelector.classList.remove('expanded');
         updateContent(selectedLang);
     });
 });
 
-// Установка языка по умолчанию при загрузке страницы
+// Начальная настройка контента при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
     updateContent('en');
-    document.getElementById('language-list').style.display = 'none';
 });

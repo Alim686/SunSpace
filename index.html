@@ -20,19 +20,18 @@
   <!-- Навигация -->
   <nav class="navbar">
     <div class="language-selector">
-      <button id="language-btn">EN</button>
-      <ul id="language-list">
-          <li data-lang="en">EN</li>
-          <li data-lang="ru">RU</li>
-          <li data-lang="zh">ZH</li> <!-- Китайский язык иероглифами -->
-      </ul>
-    </div>
-    
-    <a href="#description">About</a>
-    <a href="#how-to-buy">How to buy</a>
-    <a href="#tokenomics">Tokenomics</a>
-    <a href="#roadmap">Roadmap</a>
-  </nav>
+      <button id="language-btn" class="round-btn">
+          <span class="btn-text">EN</span>
+      </button>
+      <div id="language-options" class="language-options">
+          <button class="lang-option" data-lang="en">EN</button>
+          <button class="lang-option" data-lang="ru">RU</button>
+          <button class="lang-option" data-lang="zh">中文</button>
+      </div>
+  </div>  
+</nav>
+
+
 
   <!-- Контентные секции -->
   <div class="content-wrapper">
@@ -45,18 +44,17 @@
 
     <section id="how-to-buy" class="section">
       <div class="content">
-          <h2>How to Buy</h2>
-          <ol class="custom-list">
-              <li><span class="custom-number">1</span><a href="https://www.tronlink.org/" target="_blank" translate="no">Download TronLink Wallet</a> (Android, iOS, Chrome)</li>
-              <li><span class="custom-number">2</span>Deposit Tron ($TRX) to the wallet from any exchanges</li>
-              <li><span class="custom-number">3</span>Go to <a href="https://sunpump.meme/token/" target="_blank" translate="no">Sunpump.meme</a>&nbsp;or <a href="https://sun.io/#/sun_swap/" target="_blank" translate="no">Sun.io</a>, set the Slippage tolerance 1% and buy token</li>
-          </ol>
-          <div class="important-info">
-              <p><i class="icon-info">!</i> IMPORTANT: You must leave a minimum 10-15 TRX ($2) in your wallet balance to pay commissions on the network.</p>
-          </div>
+        <h2>How to Buy</h2>
+        <ol class="custom-list">
+          <li><span class="custom-number">1</span><a href="https://www.tronlink.org/" target="_blank" translate="no">Download TronLink Wallet</a> (Android, iOS, Chrome)</li>
+          <li><span class="custom-number">2</span>Deposit Tron ($TRX) to the wallet from any exchanges</li>
+          <li><span class="custom-number">3</span>Go to <a href="https://sunpump.meme/token/" target="_blank" translate="no">Sunpump.meme</a>&nbsp;or <a href="https://sun.io/#/sun_swap/" target="_blank" translate="no">Sun.io</a>, set the Slippage tolerance 1% and buy token</li>
+        </ol>
+        <div class="important-info">
+          <p><i class="icon-info">!</i> IMPORTANT: You must leave a minimum 10-15 TRX ($2) in your wallet balance to pay commissions on the network.</p>
+        </div>
       </div>
-  </section>
-  
+    </section>
 
     <section id="tokenomics" class="section">
       <div class="content">
