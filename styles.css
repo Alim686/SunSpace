@@ -211,7 +211,7 @@ h1, h2 {
 
 p, ul, ol {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 100%;
 }
 
 ul, ol {
