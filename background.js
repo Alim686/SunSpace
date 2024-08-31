@@ -33,40 +33,23 @@ function moveAstronaut() {
     astronaut.style.transform = `translate(${x}px, ${y}px) rotate(${rotation}deg)`;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    moveAstronaut();
-    setInterval(moveAstronaut, 10000); // Перемещение каждые 20 секунд
-});
-
-
-function applyPressureEffect(event) {
-    const content = document.querySelector('.content');
-    const maxPressure = 200; // Максимальное смещение при "давлении"
-    let xPressure, yPressure;
-
-    if (event.type === 'click') {
-        // Получаем координаты нажатия мыши
-        xPressure = (event.clientX / window.innerWidth - 0.5) * maxPressure;
-        yPressure = (event.clientY / window.innerHeight - 0.5) * maxPressure;
-    } else if (event.type === 'touchstart') {
-        // Получаем координаты касания
-        const touch = event.touches[0];
-        xPressure = (touch.clientX / window.innerWidth - 0.5) * maxPressure;
-        yPressure = (touch.clientY / window.innerHeight - 0.5) * maxPressure;
-    }
-
-    // Проверка координат в консоли для отладки
-    console.log('xPressure:', xPressure, 'yPressure:', yPressure);
-
-    // Применяем смещение к блоку .content
-    content.style.transform = `translate(${xPressure}px, ${yPressure}px)`;
-
-    // Через 200 мс возвращаем блок в исходное состояние
-    setTimeout(() => {
-        content.style.transform = '';
-    }, 200);
+function moveSpaceship() {
+    const spaceship = document.getElementById('spaceship');
+    const { x, y } = getRandomPosition(spaceship);
+    const rotation = getRandomRotation();
+    spaceship.style.transform = `translate(${x}px, ${y}px) rotate(${rotation}deg)`;
 }
 
-// Добавляем обработчики событий для мыши и сенсора
-document.addEventListener('click', applyPressureEffect);
-document.addEventListener('touchstart', applyPressureEffect);
+document.addEventListener('DOMContentLoaded', () => {
+    moveAstronaut();
+    moveSpaceship(); // Перемещаем корабль при загрузке
+
+    setInterval(moveAstronaut, 10000); // Перемещение астронавта каждые 10 секунд
+    setInterval(moveSpaceship, 10000); // Перемещение корабля каждые 10 секунд
+});
+
+document.getElementById('spaceship').addEventListener('click', function(event) {
+    event.stopPropagation(); // Останавливаем всплытие событий, чтобы предотвратить перехват клика другими обработчиками
+    window.open('https://t.me/alim_live', '_blank'); // Открываем ссылку в новой вкладке
+});
+document.getElementById('spaceship').style.pointerEvents = 'auto'; // Гарантируем, что иконка реагирует на клики
