@@ -22,7 +22,7 @@ const translations = {
                 "Market Cap: ~1m$",
                 "Holders: ~1k"
             ],
-            address: "CA: sdvdvfwenjwnjwenjve"
+            address: "CA: TEHwcoftEokQ2sT8eYi76pamHioRbgaNhs"
         },
         "roadmap": {
             title: "Roadmap",
@@ -62,7 +62,7 @@ const translations = {
                 "Рыночная капитализация: ~1m$",
                 "Держатели: ~1k"
             ],
-            address: "CA: sdvdvfwenjwnjwenjve"
+            address: "CA: TEHwcoftEokQ2sT8eYi76pamHioRbgaNhs"
         },
         "roadmap": {
             title: "Дорожная карта",
@@ -80,7 +80,7 @@ const translations = {
             ]
         }
     },
-    zh: {
+    中文: {
         "description": {
             title: "SunSpace",
             text: "SunSpace 不仅仅是一个代币；它是您通向未来的门票！我们结合太阳的力量和对太空的热爱，创造了一些真正令人兴奋的东西。通过 SunSpace，您将加入一个将绿色能源和太空探索提升到新水平的运动。我们相信拯救地球既有趣又有利可图，同时为通向星星的道路铺平了道路。加入我们，让我们一起点亮未来！"
@@ -102,7 +102,7 @@ const translations = {
                 "市值：~1m$",
                 "持有者：~1k"
             ],
-            address: "CA: sdvdvfwenjwnjwenjve"
+            address: "CA: TEHwcoftEokQ2sT8eYi76pamHioRbgaNhs"
         },
         "roadmap": {
             title: "路线图",
@@ -190,4 +190,32 @@ document.querySelectorAll('.lang-option').forEach(function(langItem) {
 // Начальная настройка контента при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
     updateContent('en');
+});
+
+
+document.querySelectorAll('.lang-option').forEach(function(langItem) {
+    langItem.addEventListener('click', function() {
+        const selectedLang = this.getAttribute('data-lang');
+        const selectedFlag = this.querySelector('.flag-icon').src;  // Получаем ссылку на флаг
+
+        // Обновляем основной текст и иконку на кнопке
+        const languageBtn = document.getElementById('language-btn');
+        languageBtn.innerHTML = `<img src="${selectedFlag}" alt="Flag" class="flag-icon"> ${selectedLang.toUpperCase()}`;
+
+        // Закрываем список языков
+        const languageOptions = document.getElementById('language-options');
+        const languageSelector = document.querySelector('.language-selector');
+        languageOptions.classList.remove('expanded');
+        languageSelector.classList.remove('expanded');
+
+        // Обновляем контент на выбранном языке
+        updateContent(selectedLang);
+    });
+});
+
+// Начальная настройка языка при загрузке страницы
+document.addEventListener('DOMContentLoaded', () => {
+    const defaultFlag = document.querySelector('.lang-option[data-lang="en"] .flag-icon').src;  // Флаг по умолчанию
+    document.getElementById('language-btn').innerHTML = `<img src="${defaultFlag}" alt="Flag" class="flag-icon"> EN`;
+    updateContent('en');  // Устанавливаем язык по умолчанию
 });
