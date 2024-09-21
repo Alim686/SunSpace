@@ -614,11 +614,11 @@ ul, ol {
 .custom-list a:hover {
     color: #00ffff;
 }
-.custom-list {
-    display: flex;
-    flex-wrap: wrap; /* Разрешаем перенос текста */
-    justify-content: flex-start; /* Выравнивание элементов в начале */
+.custom-list a {
+    max-width: 100%; /* Ограничиваем ширину ссылки */
+    display: inline-block; /* Чтобы ссылка не растягивалась */
 }
+
 @media (max-width: 768px) {
     .custom-list li {
         font-size: 16px; /* Уменьшаем размер шрифта для мобильных устройств */
