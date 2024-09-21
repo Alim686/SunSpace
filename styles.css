@@ -172,7 +172,7 @@ body {
     max-width: 1200px;
     width: 94%;
     padding: 3%;
-    background: rgba(29, 147, 163, 0.74); /* Добавляем лёгкий фон для выделения */
+    background: #003f5ecc; /* Добавляем лёгкий фон для выделения */
     border-radius: 50px; /* Закругляем углы */
     z-index: 2;
     position: relative;
@@ -201,13 +201,13 @@ h1, h2 {
     margin-bottom: 20px;
     font-size: 48px;
     text-shadow: 
-        0 0 5px #00bcd4,
-        0 0 10px #00bcd4,
-        0 0 20px #00bcd4,
-        0 0 30px #00ffff,
-        0 0 40px #00ffff,
-        0 0 50px #00ffff,
-        0 0 60px #00ffff; /* Неоновая подсветка */
+        0 0 5px #62b3ff,
+        0 0 10px #62b3ff,
+        0 0 20px #62b3ff,
+        0 0 30px #62b3ff,
+        0 0 40px #62b3ff,
+        0 0 50px #62b3ff,
+        0 0 60px #62b3ff; /* Неоновая подсветка */
     text-align: center; /* Центрирование заголовков */
 }
 
@@ -243,7 +243,7 @@ ul, ol {
 .custom-number {
     width: 30px;
     height: 30px;
-    background-color: #023e46; /* Ваш стиль */
+    background-color: #005091; /* Ваш стиль */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -252,7 +252,7 @@ ul, ol {
     color: #ffffff;
     margin-right: 15px;
     font-size: 18px;
-    box-shadow: 0 0 10px rgba(0, 188, 212, 0.7);
+    box-shadow: 0 0 10px rgba(0, 187, 212, 0.514);
     flex-shrink: 0; /* Предотвращает сжатие цифр */
 }
 
@@ -268,7 +268,7 @@ ul, ol {
 }
 
 .important-info {
-    background: radial-gradient(circle, #5dcfc8, #023e46);
+    background: radial-gradient(circle, #096694, #17aaff);
     color: #ffffff;
     padding: 2px 10px;
     border-radius: 40px;
@@ -276,7 +276,7 @@ ul, ol {
     align-items: center;
     font-size: 16px;
     margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 188, 212, 0.7); /* Добавляем тень */
+    box-shadow: 0 0 10px rgba(11, 171, 192, 0.637); /* Добавляем тень */
 }
 
 .icon-info {
@@ -308,19 +308,19 @@ ul, ol {
 
 .token-address-btn {
     display: inline-block;
-    background: radial-gradient(circle, #5dcfc8, #023e46);
+    background: radial-gradient(circle, #096694, #17aaff);
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
     margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 188, 212, 0.7); /* Добавляем тень */
+    box-shadow: 0 0 10px rgba(21, 213, 238, 0.603); /* Добавляем тень */
     
 }
 
 .token-address-btn:hover{
-    background: radial-gradient(circle, #023e46, #5dcfc8);
+    background: radial-gradient(circle, #17aaff, #096694);
 }
 
 
@@ -354,7 +354,7 @@ ul, ol {
     position: relative;
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #66fcf1, #000000);
+    background: radial-gradient(circle, #096694, #17aaff);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -369,8 +369,8 @@ ul, ol {
 
 .roadmap-item.completed .roadmap-point,
 .roadmap-item.current .roadmap-point {
-    background-color: #0fda6a; /* Зеленый цвет для завершенных и текущего пунктов */
-    box-shadow: 0 0 15px 5px rgba(8, 252, 117, 0.7);
+    background-color: #69f3a7; /* Зеленый цвет для завершенных и текущего пунктов */
+    box-shadow: 0 0 15px 5px rgba(69, 182, 120, 0.7);
 }
 
 .roadmap-path:before {
@@ -380,7 +380,7 @@ ul, ol {
     top: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(to bottom, #5dfc9f 0%, #40cc7f 30%, #00bcd4 30%, #1fadc0 100%); /* Зеленая линия до третьего пункта */
+    background: linear-gradient(to bottom, #14ca66 0%, #2be0d7 30%, #2be0d7 30%, #00507e 100%); /* Зеленая линия до третьего пункта */
     z-index: 0;
     transform: translateX(50%);
 }
@@ -425,7 +425,7 @@ ul, ol {
     opacity: 0;
     overflow: hidden;
     border-radius: 50%;
-    background: linear-gradient(135deg, #66fcf1, #000000);
+    background: radial-gradient(circle, #096694, #17aaff);
 }
 
 .language-options.expanded {
@@ -491,7 +491,7 @@ ul, ol {
     opacity: 0;
     overflow: hidden;
     border-radius: 50%;
-    background: linear-gradient(135deg, #66fcf1, #000000);
+    background: radial-gradient(circle, #096694, #17aaff);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 12px 24px rgba(0, 0, 0, 0.3); /* Усиленный 3D-эффект */
 }
 
@@ -531,7 +531,7 @@ ul, ol {
     justify-content: center;
     padding: 10px 15px;
     border-radius: 50%; /* Закругляем кнопку, чтобы она оставалась круглой */
-    background: linear-gradient(135deg, #66fcf1, #000000);
+    background: radial-gradient(circle, #096694, #17aaff);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 12px 24px rgba(0, 0, 0, 0.3); /* Усиленный 3D-эффект */
 }
 
@@ -563,7 +563,7 @@ ul, ol {
 .fixed-btn {
     width: 200px;
     height: 60px;
-    background: radial-gradient(circle, #00aaff, #5200b1); /* Круговой градиент */
+    background: radial-gradient(circle, #096694, #17aaff); /* Круговой градиент */
     color: #fff;
     text-decoration: none;
     font-size: 20px;
@@ -577,7 +577,7 @@ ul, ol {
 }
 
 .fixed-btn:hover {
-    background: radial-gradient(circle, #5200b1, #00aaff); /* Градиент меняется при наведении */
+    background: radial-gradient(circle, #17aaff, #096694); /* Градиент меняется при наведении */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), /* Тень становится глубже при наведении */
                 0 12px 24px rgba(0, 0, 0, 0.3); /* Усиленный 3D-эффект */
     color: #fff; /* Оставляем белый текст при наведении */
