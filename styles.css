@@ -172,7 +172,7 @@ body {
     max-width: 1200px;
     width: 94%;
     padding: 3%;
-    background: rgba(29, 147, 163, 0.616); /* Добавляем лёгкий фон для выделения */
+    background: rgba(29, 147, 163, 0.74); /* Добавляем лёгкий фон для выделения */
     border-radius: 50px; /* Закругляем углы */
     z-index: 2;
     position: relative;
@@ -563,10 +563,10 @@ ul, ol {
 .fixed-btn {
     width: 200px;
     height: 60px;
-    background: radial-gradient(circle, #5dcfc8, #023e46); /* Круговой градиент */
+    background: radial-gradient(circle, #00aaff, #5200b1); /* Круговой градиент */
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -577,7 +577,7 @@ ul, ol {
 }
 
 .fixed-btn:hover {
-    background: radial-gradient(circle, #023e46, #5dcfc8); /* Градиент меняется при наведении */
+    background: radial-gradient(circle, #5200b1, #00aaff); /* Градиент меняется при наведении */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), /* Тень становится глубже при наведении */
                 0 12px 24px rgba(0, 0, 0, 0.3); /* Усиленный 3D-эффект */
     color: #fff; /* Оставляем белый текст при наведении */
@@ -588,7 +588,7 @@ ul, ol {
     width: 60px;
     height: 60px;
     border-radius: 50%; /* Делаем кнопку круглой */
-    background: radial-gradient(circle, #66fcf1, #000000); /* Градиентный фон */
+    background: radial-gradient(circle, #009eec, #005d8b); /* Градиентный фон */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -599,14 +599,14 @@ ul, ol {
 }
 
 .fixed-btn-icon:hover {
-    background: radial-gradient(circle, #023e46, #5dcfc8); /* Меняем градиент при наведении */
+    background: radial-gradient(circle, #005d8b, #009eec); /* Меняем градиент при наведении */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 12px 24px rgba(0, 0, 0, 0.3); /* Усиленный 3D-эффект */
 }
 
 /* Иконки внутри круглых кнопок */
 .icon-btn-image {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
 }
 
 .content-wrapper {
