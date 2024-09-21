@@ -560,7 +560,7 @@ ul, ol {
 }
 
 .fixed-btn {
-    width: 200px; /* Фиксированная ширина кнопки */
+    width: 150px; /* Фиксированная ширина кнопки */
     height: 60px; /* Фиксированная высота кнопки */
     background: radial-gradient(circle, #5dcfc8, #023e46); /* Круговой градиент */
     color: #fff; /* Белый цвет текста */
@@ -583,4 +583,34 @@ ul, ol {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), /* Тень становится глубже при наведении */
                 0 12px 24px rgba(0, 0, 0, 0.3); /* Усиленный 3D-эффект */
     color: #fff; /* Оставляем белый текст при наведении */
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+    max-width: 100%; /* Ограничиваем ширину списка */
+}
+
+.custom-list li {
+    display: flex;
+    align-items: flex-start; /* Выравнивание по началу строки */
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #e6e6e6;
+    padding: 10px 0;
+    width: 100%; /* Ограничиваем ширину */
+    word-wrap: break-word; /* Разрываем длинные слова */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.custom-list a {
+    color: #00bcd4;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-left: 5px;
+    word-wrap: break-word; /* Разрываем длинные ссылки */
+}
+
+.custom-list a:hover {
+    color: #00ffff;
 }
