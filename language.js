@@ -3,16 +3,16 @@ const translations = {
     en: {
         "description": {
             title: "SunSpace",
-            text: "SunSpace isn’t just a token; it’s your ticket to the future! We’re combining the power of the sun and our love for space to create something truly exciting. With SunSpace, you’re joining a movement that’s taking green energy and space exploration to the next level. We believe saving the planet can be fun and profitable, all while paving the way to the stars. Join us, and let’s light up the future together!"
+            text: "SunSpace isn’t just a token; it’s your ticket to the future! We’re combining the power of the sun and our love for space to create something truly exciting. With SunSpace, you’re joining a movement that’s taking green energy and space exploration to the next level. \n\nWe believe saving the planet can be fun and profitable, all while paving the way to the stars. Join us, and let’s light up the future together!"
         },
         "how-to-buy": {
             title: "How to Buy",
             list: [
-                "Download TronLink Wallet (Android, iOS, Chrome)",
-                "Deposit Tron ($TRX) to the wallet from any exchanges",
-                "Go to Sunpump.meme or Sun.io, set the Slippage tolerance 1% and buy token"
+                '<span class="custom-number">1</span><a href="https://www.tronlink.org/" target="_blank">Download TronLink Wallet</a> (Android, iOS, Chrome)',
+                '<span class="custom-number">2</span>Deposit Tron ($TRX) to the wallet from any exchanges',
+                '<span class="custom-number">3</span>Go to <a href="https://sunpump.meme/token/" target="_blank">Sunpump.meme</a> or <a href="https://sun.io/#/sun_swap/" target="_blank">Sun.io</a>, set the Slippage tolerance 1% and buy token'
             ],
-            importantInfo: "IMPORTANT: You must leave a minimum 10-15 TRX ($2) in your wallet balance to pay commissions on the network."
+            importantInfo: "IMPORTANT: You must leave a minimum 80 TRX in your wallet balance to pay commissions on the network."
         },
         "tokenomics": {
             title: "Tokenomics",
@@ -43,16 +43,16 @@ const translations = {
     ru: {
         "description": {
             title: "SunSpace",
-            text: "SunSpace — это не просто токен; это ваш билет в будущее! Мы объединяем силу солнца и нашу любовь к космосу, чтобы создать нечто по-настоящему захватывающее. С SunSpace вы присоединяетесь к движению, которое поднимает зеленую энергию и освоение космоса на новый уровень. Мы верим, что спасать планету может быть весело и прибыльно, одновременно прокладывая путь к звездам. Присоединяйтесь к нам, и давайте осветим будущее вместе!"
+            text: "SunSpace — это не просто токен; это ваш билет в будущее! Мы объединяем силу солнца и нашу любовь к космосу, чтобы создать нечто по-настоящему захватывающее. С SunSpace вы присоединяетесь к движению, которое поднимает зеленую энергию и освоение космоса на новый уровень. \n\nМы верим, что спасать планету может быть весело и прибыльно, одновременно прокладывая путь к звездам. Присоединяйтесь к нам, и давайте осветим будущее вместе!"
         },
         "how-to-buy": {
             title: "Как купить",
             list: [
-                "Скачайте TronLink Wallet (Android, iOS, Chrome)",
-                "Пополните кошелек Tron ($TRX) с любого обменника",
-                "Перейдите на Sunpump.meme или Sun.io, установите допустимый слиппедж 1% и купите токен"
+                '<span class="custom-number">1</span><a href="https://www.tronlink.org/" target="_blank">Скачайте TronLink Wallet</a> (Android, iOS, Chrome)',
+                '<span class="custom-number">2</span>Пополните кошелек Tron ($TRX) с любого обменника',
+                '<span class="custom-number">3</span>Перейдите на <a href="https://sunpump.meme/token/" target="_blank">Sunpump.meme</a> или <a href="https://sun.io/#/sun_swap/" target="_blank">Sun.io</a>, установите допустимый слиппедж 1% и купите токен'
             ],
-            importantInfo: "ВАЖНО: Вы должны оставить минимум 10-15 TRX ($2) на балансе вашего кошелька для оплаты комиссий в сети."
+            importantInfo: "ВАЖНО: Вы должны оставить минимум 80 TRX на балансе вашего кошелька для оплаты комиссий в сети."
         },
         "tokenomics": {
             title: "Токеномика",
@@ -83,16 +83,16 @@ const translations = {
     中文: {
         "description": {
             title: "SunSpace",
-            text: "SunSpace 不仅仅是一个代币；它是您通向未来的门票！我们结合太阳的力量和对太空的热爱，创造了一些真正令人兴奋的东西。通过 SunSpace，您将加入一个将绿色能源和太空探索提升到新水平的运动。我们相信拯救地球既有趣又有利可图，同时为通向星星的道路铺平了道路。加入我们，让我们一起点亮未来！"
+            text: "SunSpace 不仅仅是一个代币；它是您通向未来的门票！我们结合太阳的力量和对太空的热爱，创造了一些真正令人兴奋的东西。通过 SunSpace，您将加入一个将绿色能源和太空探索提升到新水平的运动。\n\n我们相信拯救地球既有趣又有利可图，同时为通向星星的道路铺平了道路。加入我们，让我们一起点亮未来！"
         },
         "how-to-buy": {
             title: "如何购买",
             list: [
-                "下载 TronLink Wallet（安卓、iOS、Chrome）",
-                "从任何交易所将 Tron ($TRX) 存入钱包",
-                "访问 Sunpump.meme 或 Sun.io，设置 1% 的滑点容忍度并购买代币"
+                '<span class="custom-number">1</span><a href="https://www.tronlink.org/" target="_blank">下载 TronLink Wallet</a>（安卓、iOS、Chrome）',
+                '<span class="custom-number">2</span>从任何交易所将 Tron ($TRX) 存入钱包',
+                '<span class="custom-number">3</span>访问 <a href="https://sunpump.meme/token/" target="_blank">Sunpump.meme</a> 或 <a href="https://sun.io/#/sun_swap/" target="_blank">Sun.io</a>，设置 1% 的滑点容忍度并购买代币'
             ],
-            importantInfo: "重要提示：您必须在钱包余额中保留至少 10-15 TRX ($2) 以支付网络佣金。"
+            importantInfo: "重要提示：您必须在钱包余额中保留至少 80 TRX 以支付网络佣金。"
         },
         "tokenomics": {
             title: "代币经济学",
@@ -219,3 +219,52 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('language-btn').innerHTML = `<img src="${defaultFlag}" alt="Flag" class="flag-icon"> EN`;
     updateContent('en');  // Устанавливаем язык по умолчанию
 });
+function updateContent(language) {
+    const contentSections = document.querySelectorAll('.section');
+    contentSections.forEach(section => {
+        const id = section.id;
+        const sectionData = translations[language][id];
+        
+        if (sectionData) {
+            // Обновляем заголовки
+            section.querySelector('h1, h2').textContent = sectionData.title;
+
+            // Обновляем параграфы
+            const pElement = section.querySelector('p:not(.important-info)');
+            if (pElement) {
+                pElement.innerHTML = sectionData.text ? sectionData.text.replace(/\n/g, '<br>') : '';
+            }
+
+            // Обновляем списки (ul или ol)
+            const list = section.querySelector('ul, ol');
+            if (list && sectionData.list) {
+                list.innerHTML = ''; // Очищаем текущий список
+                sectionData.list.forEach(item => {
+                    const li = document.createElement('li');
+                    li.innerHTML = item;
+                    list.appendChild(li);
+                });
+            }
+
+            // Обновляем важную информацию
+            const importantInfo = section.querySelector('.important-info p');
+            if (importantInfo && sectionData.importantInfo) {
+                importantInfo.innerHTML = '<i class="icon-info">!</i> ' + sectionData.importantInfo;
+            }
+
+            // Обновляем токен адрес
+            const address = section.querySelector('.token-address-btn');
+            if (address && sectionData.address) {
+                address.textContent = sectionData.address;
+            }
+
+            // Обновляем шаги в дорожной карте
+            const roadmapItems = section.querySelectorAll('.roadmap-item p');
+            if (roadmapItems.length > 0 && sectionData.steps) {
+                roadmapItems.forEach((item, index) => {
+                    item.textContent = sectionData.steps[index];
+                });
+            }
+        }
+    });
+}
