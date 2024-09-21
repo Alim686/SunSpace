@@ -17,10 +17,10 @@ const translations = {
         "tokenomics": {
             title: "Tokenomics",
             list: [
-                "Token name: SunSpace ($SPACE)",
-                "Total supply: 1b",
-                "Market Cap: ~1m$",
-                "Holders: ~1k"
+                "<strong>Token name:</strong> SunSpace ($SPACE)",
+                "<strong>Total supply:</strong> 1b",
+                "<strong>Market Cap:</strong> ~1m$",
+                "<strong>Holders:</strong> ~1k"
             ],
             address: "CA: TEHwcoftEokQ2sT8eYi76pamHioRbgaNhs"
         },
