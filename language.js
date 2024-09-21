@@ -8,9 +8,9 @@ const translations = {
         "how-to-buy": {
             title: "How to Buy",
             list: [
-                '<span class="custom-number">1</span><a href="https://www.tronlink.org/" target="_blank">Download TronLink Wallet</a> (Android, iOS, Chrome)',
-                '<span class="custom-number">2</span>Deposit Tron ($TRX) to the wallet from any exchanges',
-                '<span class="custom-number">3</span>Go to <a href="https://sunpump.meme/token/" target="_blank">Sunpump.meme</a> or <a href="https://sun.io/#/sun_swap/" target="_blank">Sun.io</a>, set the Slippage tolerance 1% and buy token'
+                "Download TronLink Wallet (Android, iOS, Chrome)",
+                "Deposit Tron ($TRX) to the wallet from any exchanges",
+                "Go to Sunpump.meme or Sun.io, set the Slippage tolerance 1% and buy token"
             ],
             importantInfo: "IMPORTANT: You must leave a minimum 80 TRX in your wallet balance to pay commissions on the network."
         },
@@ -48,9 +48,9 @@ const translations = {
         "how-to-buy": {
             title: "Как купить",
             list: [
-                '<span class="custom-number">1</span><a href="https://www.tronlink.org/" target="_blank">Скачайте TronLink Wallet</a> (Android, iOS, Chrome)',
-                '<span class="custom-number">2</span>Пополните кошелек Tron ($TRX) с любого обменника',
-                '<span class="custom-number">3</span>Перейдите на <a href="https://sunpump.meme/token/" target="_blank">Sunpump.meme</a> или <a href="https://sun.io/#/sun_swap/" target="_blank">Sun.io</a>, установите допустимый слиппедж 1% и купите токен'
+                "Скачайте TronLink Wallet (Android, iOS, Chrome)",
+                "Пополните кошелек Tron ($TRX) с любого обменника",
+                "Перейдите на Sunpump.meme или Sun.io, установите допустимый слиппедж 1% и купите токен"
             ],
             importantInfo: "ВАЖНО: Вы должны оставить минимум 80 TRX на балансе вашего кошелька для оплаты комиссий в сети."
         },
@@ -88,9 +88,9 @@ const translations = {
         "how-to-buy": {
             title: "如何购买",
             list: [
-                '<span class="custom-number">1</span><a href="https://www.tronlink.org/" target="_blank">下载 TronLink Wallet</a>（安卓、iOS、Chrome）',
-                '<span class="custom-number">2</span>从任何交易所将 Tron ($TRX) 存入钱包',
-                '<span class="custom-number">3</span>访问 <a href="https://sunpump.meme/token/" target="_blank">Sunpump.meme</a> 或 <a href="https://sun.io/#/sun_swap/" target="_blank">Sun.io</a>，设置 1% 的滑点容忍度并购买代币'
+                "下载 TronLink Wallet（安卓、iOS、Chrome）",
+                "从任何交易所将 Tron ($TRX) 存入钱包",
+                "访问 Sunpump.meme 或 Sun.io，设置 1% 的滑点容忍度并购买代币"
             ],
             importantInfo: "重要提示：您必须在钱包余额中保留至少 80 TRX 以支付网络佣金。"
         },
