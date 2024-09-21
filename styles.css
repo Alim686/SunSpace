@@ -172,7 +172,7 @@ body {
     max-width: 1200px;
     width: 94%;
     padding: 3%;
-    background: rgba(29, 147, 163, 0.459); /* Добавляем лёгкий фон для выделения */
+    background: rgba(29, 147, 163, 0.616); /* Добавляем лёгкий фон для выделения */
     border-radius: 50px; /* Закругляем углы */
     z-index: 2;
     position: relative;
@@ -496,7 +496,7 @@ ul, ol {
 }
 
 .language-options.expanded {
-    width: 400px; /* Меняем ширину на большее значение */
+    width: 300px; /* Меняем ширину на большее значение */
     height: 50px;
     border-radius: 25px;
     opacity: 1;
@@ -607,4 +607,8 @@ ul, ol {
 .icon-btn-image {
     width: 40px;
     height: 40px;
+}
+
+.content-wrapper {
+    padding-bottom: 120px; /* Увеличиваем нижний отступ */
 }
