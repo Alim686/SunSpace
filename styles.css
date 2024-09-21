@@ -614,3 +614,8 @@ ul, ol {
 .custom-list a:hover {
     color: #00ffff;
 }
+.custom-list {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос текста */
+    justify-content: flex-start; /* Выравнивание элементов в начале */
+}
