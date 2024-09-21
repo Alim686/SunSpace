@@ -492,6 +492,7 @@ ul, ol {
     overflow: hidden;
     border-radius: 50%;
     background: linear-gradient(135deg, #66fcf1, #000000);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 12px 24px rgba(0, 0, 0, 0.3); /* Усиленный 3D-эффект */
 }
 
 .language-options.expanded {
@@ -531,6 +532,7 @@ ul, ol {
     padding: 10px 15px;
     border-radius: 50%; /* Закругляем кнопку, чтобы она оставалась круглой */
     background: linear-gradient(135deg, #66fcf1, #000000);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 12px 24px rgba(0, 0, 0, 0.3); /* Усиленный 3D-эффект */
 }
 
 
