@@ -475,16 +475,36 @@ ul, ol {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed;
 }
 
 .language-options {
     display: flex;
-    gap: 20px; /* Разделение кнопок */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%; /* Начальная позиция по центру */
+    transform: translateX(-50%); /* Центрируем относительно родительского элемента */
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    transition: all 0.4s ease; /* Анимация расширения */
+    opacity: 0;
+    overflow: hidden;
+    border-radius: 50%;
     background: linear-gradient(135deg, #66fcf1, #000000);
-    border-radius: 25px;
-    padding: 10px;
 }
+
+.language-options.expanded {
+    width: 400px; /* Меняем ширину на большее значение */
+    height: 50px;
+    border-radius: 25px;
+    opacity: 1;
+    z-index: 4;
+    transform: translateX(-50%); /* Центрируем расширенный блок */
+}
+
 
 .lang-option {
     display: flex;
