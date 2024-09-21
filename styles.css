@@ -6,6 +6,23 @@ html, body {
     touch-action: manipulation;
 }
 
+button, a {
+    user-select: none; /* Запрещаем выделение текста */
+    outline: none; /* Убираем обводку фокуса */
+}
+
+button:focus, a:focus {
+    outline: none; /* Убираем обводку при фокусе */
+}
+
+button:active, a:active {
+    outline: none; /* Убираем обводку при нажатии */
+    background: none; /* Можно сбросить изменение фона при нажатии */
+}
+
+button, a {
+    -webkit-tap-highlight-color: transparent; /* Убираем подсветку при клике на мобильных устройствах */
+}
 
 
 
