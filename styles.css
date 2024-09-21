@@ -619,3 +619,12 @@ ul, ol {
     flex-wrap: wrap; /* Разрешаем перенос текста */
     justify-content: flex-start; /* Выравнивание элементов в начале */
 }
+@media (max-width: 768px) {
+    .custom-list li {
+        font-size: 16px; /* Уменьшаем размер шрифта для мобильных устройств */
+    }
+
+    .custom-number {
+        font-size: 14px;
+    }
+}
