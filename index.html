@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Цвет верхней панели браузера (Android) -->
-    <meta name="theme-color" content="#00bcd4">
-
-    <!-- Цвет статусной строки (верхней панели) для iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>SunSpace Token</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switcher</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="background">
@@ -20,114 +15,290 @@
     <div class="planet planet5"></div>
     <div class="stars"></div>
     <img id="astronaut" src="icons/SpaceMan.svg" alt="Astronaut">
-
-  </a>
   </div>
 
-  <!-- Навигация -->
+  <!-- Языковой переключатель -->
   <nav class="navbar">
-    <div class="language-selector">
+    <div id="language-selector" class="language-selector">
       <button id="language-btn" class="round-btn">
-          <span class="btn-text">EN</span>
+        <img src="icons/flag-en.svg" alt="EN" class="flag-icon">
+        <span class="btn-text">EN</span>
       </button>
       <div id="language-options" class="language-options">
-          <button class="lang-option" data-lang="en">
-              <img src="icons/flag-en.svg" alt="Флаг EN" class="flag-icon"> EN
-          </button>
-          <button class="lang-option" data-lang="ru">
-              <img src="icons/flag-ru.svg" alt="Флаг RU" class="flag-icon"> RU
-          </button>
-          <button class="lang-option" data-lang="中文">
-              <img src="icons/flag-cn.svg" alt="Флаг CN" class="flag-icon"> 中文
-          </button>
+        <button class="lang-option" data-lang="en">
+          <img src="icons/flag-en.svg" alt="EN" class="flag-icon"> EN
+        </button>
+        <button class="lang-option" data-lang="ru">
+          <img src="icons/flag-ru.svg" alt="RU" class="flag-icon"> RU
+        </button>
+        <button class="lang-option" data-lang="cn">
+          <img src="icons/flag-cn.svg" alt="CN" class="flag-icon"> 中文
+        </button>
       </div>
     </div>
+  </nav>
+
+  <!-- Контейнер для контента -->
+  <div id="content-wrapper" class="content-wrapper">
+    <!-- Английский контент -->
+    <section id="en-section" class="section">
+      <div class="content-wrapper">
+        <section id="description" class="section">
+          <div class="content">
+            <h1>SunSpace</h1>
+            <p>SunSpace isn’t just a token; it’s your ticket to the future!We’re combining the power of the sun and our love for space to create something truly exciting. With SunSpace, you’re joining a movement that’s taking green energy and space exploration to the next level. 
+              <br> We believe saving the planet can be fun and profitable, all while paving the way to the stars. Join us, and let’s light up the future together!</p>
+          </div>
+        </section>
+    
+        <section id="how-to-buy" class="section">
+          <div class="content">
+            <h2>How to Buy</h2>
+            <ol class="custom-list">
+              <li><span class="custom-number">1</span><a href="https://www.tronlink.org/" target="_blank" >Download TronLink Wallet</a> (Android, iOS, Chrome)</li>
+              <li><span class="custom-number">2</span>Deposit Tron ($TRX) to the wallet from any exchanges</li>
+              <li><span class="custom-number">3</span>Go to <a href="https://sunpump.meme/token/" target="_blank" >Sunpump.meme</a>&nbsp;or <a href="https://sun.io/#/sun_swap/" target="_blank" >Sun.io</a>, set the Slippage tolerance 1% and buy token</li>
+            </ol>
+            <div class="important-info">
+              <p><i class="icon-info">!</i> IMPORTANT: You must leave a minimum 80 TRX in your wallet balance to pay commissions on the network.</p>
+            </div>
+          </div>
+        </section>
+    
+        <section id="tokenomics" class="section">
+          <div class="content">
+            <h2>Tokenomics</h2>
+            <p><strong>Token name:</strong> SunSpace ($SPACE)</p>
+            <p><strong>Total supply:</strong> 1b</p>
+            <p><strong>Market Cap:</strong> ~1m$</p>
+            <p><strong>Holders:</strong> ~1k</p>
+            <a href="https://sunpump.meme/token/TEHwcoftEokQ2sT8eYi76pamHioRbgaNhs" class="token-address-btn">CA: TEHwcoftEokQ2sT8eYi76pamHioRbgaNhs</a>
+          </div>
+        </section>
+    
+        <section id="roadmap" class="section">
+          <div class="content">
+            <h2>Roadmap</h2>
+            <div class="roadmap-path">
+              <div class="roadmap-item completed">
+                <span class="roadmap-point completed">1</span>
+                <p>Creation and launch of the SunSpace token</p>
+              </div>
+              <div class="roadmap-item completed">
+                <span class="roadmap-point completed">2</span>
+                <p>Creation of the official website</p>
+              </div>
+              <div class="roadmap-item current">
+                <span class="roadmap-point completed">3</span>
+                <p>Development and implementation of the bot</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">4</span>
+                <p>Formation of an active community</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">5</span>
+                <p>Achievement of $1 million market capitalization</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">6</span>
+                <p>Introduction of gaming processes and achievement of $10 million market capitalization</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">7</span>
+                <p>Listing on the first centralized exchange (CEX) and achievement of $1 billion market capitalization</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">8</span>
+                <p>Partnership with SpaceX and Elon Musk</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">9</span>
+                <p>Achievement of $1 trillion market capitalization</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">10</span>
+                <p>Launch of a physical coin into space and protection of the planet</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Русский контент -->
+    <section id="ru-section" class="section" style="display:none;">
       
-</nav>
-
-
-
-  <!-- Контентные секции -->
-  <div class="content-wrapper">
-    <section id="description" class="section">
-      <div class="content">
-        <h1>SunSpace</h1>
-        <p>SunSpace isn’t just a token; it’s your ticket to the future!We’re combining the power of the sun and our love for space to create something truly exciting. With SunSpace, you’re joining a movement that’s taking green energy and space exploration to the next level. 
-          <br> We believe saving the planet can be fun and profitable, all while paving the way to the stars. Join us, and let’s light up the future together!</p>
-      </div>
+        <div class="content-wrapper">
+          <section id="description" class="section">
+            <div class="content">
+              <h1>SunSpace</h1>
+              <p>SunSpace — это не просто токен, это ваш билет в будущее! Мы объединяем силу солнца и нашу любовь к космосу, чтобы создать нечто по-настоящему захватывающее. С SunSpace вы присоединяетесь к движению, которое выводит зеленую энергию и космические исследования на новый уровень. 
+                <br> Мы верим, что спасение планеты может быть увлекательным и прибыльным, и при этом прокладываем путь к звездам. Присоединяйтесь к нам, и давайте осветим будущее вместе!</p>
+            </div>
+          </section>
+      
+          <section id="how-to-buy" class="section">
+            <div class="content">
+              <h2>Как купить</h2>
+              <ol class="custom-list">
+                <li><span class="custom-number">1</span><a href="https://www.tronlink.org/" target="_blank" >Скачайте TronLink Wallet</a> (Android, iOS, Chrome)</li>
+                <li><span class="custom-number">2</span>Пополните кошелек TRX с любого обменника</li>
+                <li><span class="custom-number">3</span>Перейдите на <a href="https://sunpump.meme/token/" target="_blank" >Sunpump.meme</a>&nbsp;или <a href="https://sun.io/#/sun_swap/" target="_blank" >Sun.io</a>, установите слиппедж 1% и купите токен</li>
+              </ol>
+              <div class="important-info">
+                <p><i class="icon-info">!</i> ВАЖНО: Убедитесь, что на вашем кошельке осталось минимум 80 TRX для оплаты комиссий в сети.</p>
+              </div>
+            </div>
+          </section>
+      
+          <section id="tokenomics" class="section">
+            <div class="content">
+              <h2>Токеномика</h2>
+              <p><strong>Название токена:</strong> SunSpace ($SPACE)</p>
+              <p><strong>Общее предложение:</strong> 1 миллиард</p>
+              <p><strong>Рыночная капитализация:</strong> ~1 млн $</p>
+              <p><strong>Владельцы:</strong> ~1 тысяча</p>
+              <a href="https://sunpump.meme/token/TEHwcoftEokQ2sT8eYi76pamHioRbgaNhs" class="token-address-btn">Контрактный адрес: TEHwcoftEokQ2sT8eYi76pamHioRbgaNhs</a>
+            </div>
+          </section>
+      
+          <section id="roadmap" class="section">
+            <div class="content">
+              <h2>Дорожная карта</h2>
+              <div class="roadmap-path">
+                <div class="roadmap-item completed">
+                  <span class="roadmap-point completed">1</span>
+                  <p>Создание и запуск токена SunSpace</p>
+                </div>
+                <div class="roadmap-item completed">
+                  <span class="roadmap-point completed">2</span>
+                  <p>Создание официального веб-сайта</p>
+                </div>
+                <div class="roadmap-item current">
+                  <span class="roadmap-point completed">3</span>
+                  <p>Разработка и внедрение бота</p>
+                </div>
+                <div class="roadmap-item">
+                  <span class="roadmap-point">4</span>
+                  <p>Формирование активного сообщества</p>
+                </div>
+                <div class="roadmap-item">
+                  <span class="roadmap-point">5</span>
+                  <p>Достижение рыночной капитализации в $1 миллион</p>
+                </div>
+                <div class="roadmap-item">
+                  <span class="roadmap-point">6</span>
+                  <p>Введение игровых процессов и достижение рыночной капитализации в $10 миллионов</p>
+                </div>
+                <div class="roadmap-item">
+                  <span class="roadmap-point">7</span>
+                  <p>Листинг на первой централизованной бирже (CEX) и достижение капитализации в $1 миллиард</p>
+                </div>
+                <div class="roadmap-item">
+                  <span class="roadmap-point">8</span>
+                  <p>Партнерство с SpaceX и Илоном Маском</p>
+                </div>
+                <div class="roadmap-item">
+                  <span class="roadmap-point">9</span>
+                  <p>Достижение рыночной капитализации в $1 триллион</p>
+                </div>
+                <div class="roadmap-item">
+                  <span class="roadmap-point">10</span>
+                  <p>Запуск физической монеты в космос и защита планеты</p>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+      
     </section>
 
-    <section id="how-to-buy" class="section">
-      <div class="content">
-        <h2>How to Buy</h2>
-        <ol class="custom-list">
-          <li><span class="custom-number">1</span><a href="https://www.tronlink.org/" target="_blank" >Download TronLink Wallet</a> (Android, iOS, Chrome)</li>
-          <li><span class="custom-number">2</span>Deposit Tron ($TRX) to the wallet from any exchanges</li>
-          <li><span class="custom-number">3</span>Go to <a href="https://sunpump.meme/token/" target="_blank" >Sunpump.meme</a>&nbsp;or <a href="https://sun.io/#/sun_swap/" target="_blank" >Sun.io</a>, set the Slippage tolerance 1% and buy token</li>
-        </ol>
-        <div class="important-info">
-          <p><i class="icon-info">!</i> IMPORTANT: You must leave a minimum 80 TRX in your wallet balance to pay commissions on the network.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="tokenomics" class="section">
-      <div class="content">
-        <h2>Tokenomics</h2>
-        <p><strong>Token name:</strong> SunSpace ($SPACE)</p>
-        <p><strong>Total supply:</strong> 1b</p>
-        <p><strong>Market Cap:</strong> ~1m$</p>
-        <p><strong>Holders:</strong> ~1k</p>
-        <a href="https://sunpump.meme/token/TEHwcoftEokQ2sT8eYi76pamHioRbgaNhs" class="token-address-btn">CA: TEHwcoftEokQ2sT8eYi76pamHioRbgaNhs</a>
-      </div>
-    </section>
-
-    <section id="roadmap" class="section">
-      <div class="content">
-        <h2>Roadmap</h2>
-        <div class="roadmap-path">
-          <div class="roadmap-item completed">
-            <span class="roadmap-point completed">1</span>
-            <p>Creation and launch of the SunSpace token</p>
+    <!-- Китайский контент -->
+    <section id="cn-section" class="section" style="display:none;">
+      <div class="content-wrapper">
+        <section id="description" class="section">
+          <div class="content">
+            <h1>SunSpace</h1>
+            <p>SunSpace不仅仅是一个代币，它是通向未来的门票！我们结合了太阳的力量和对太空的热爱，创造出真正令人兴奋的事物。通过SunSpace，您将加入一个将绿色能源和太空探索提升到新水平的运动。
+              <br> 我们相信，拯救地球既可以有趣又可以盈利，同时还能铺就通往星辰的道路。加入我们，让我们共同点亮未来！</p>
           </div>
-          <div class="roadmap-item completed">
-            <span class="roadmap-point completed">2</span>
-            <p>Creation of the official website</p>
+        </section>
+    
+        <section id="how-to-buy" class="section">
+          <div class="content">
+            <h2>如何购买</h2>
+            <ol class="custom-list">
+              <li><span class="custom-number">1</span><a href="https://www.tronlink.org/" target="_blank">下载TronLink钱包</a> (支持Android、iOS、Chrome)</li>
+              <li><span class="custom-number">2</span>从任何交易所充值Tron ($TRX)到您的钱包</li>
+              <li><span class="custom-number">3</span>访问<a href="https://sunpump.meme/token/" target="_blank">Sunpump.meme</a> 或 <a href="https://sun.io/#/sun_swap/" target="_blank">Sun.io</a>，设置滑点容忍度为1%，然后购买代币</li>
+            </ol>
+            <div class="important-info">
+              <p><i class="icon-info">!</i> 重要提示：您的钱包余额中至少需要保留80 TRX，以支付网络手续费。</p>
+            </div>
           </div>
-          <div class="roadmap-item current">
-            <span class="roadmap-point completed">3</span>
-            <p>Development and implementation of the bot</p>
+        </section>
+    
+        <section id="tokenomics" class="section">
+          <div class="content">
+            <h2>代币经济学</h2>
+            <p><strong>代币名称：</strong> SunSpace ($SPACE)</p>
+            <p><strong>总供应量：</strong> 10亿</p>
+            <p><strong>市值：</strong> ~100万美元</p>
+            <p><strong>持有人：</strong> ~1000人</p>
+            <a href="https://sunpump.meme/token/TEHwcoftEokQ2sT8eYi76pamHioRbgaNhs" class="token-address-btn">合约地址：TEHwcoftEokQ2sT8eYi76pamHioRbgaNhs</a>
           </div>
-          <div class="roadmap-item">
-            <span class="roadmap-point">4</span>
-            <p>Formation of an active community</p>
+        </section>
+    
+        <section id="roadmap" class="section">
+          <div class="content">
+            <h2>路线图</h2>
+            <div class="roadmap-path">
+              <div class="roadmap-item completed">
+                <span class="roadmap-point completed">1</span>
+                <p>SunSpace代币的创建和发布</p>
+              </div>
+              <div class="roadmap-item completed">
+                <span class="roadmap-point completed">2</span>
+                <p>官方网站的创建</p>
+              </div>
+              <div class="roadmap-item current">
+                <span class="roadmap-point completed">3</span>
+                <p>机器人开发和实施</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">4</span>
+                <p>活跃社区的形成</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">5</span>
+                <p>实现100万美元的市值</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">6</span>
+                <p>引入游戏机制并实现1000万美元的市值</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">7</span>
+                <p>在第一个中心化交易所（CEX）上市并实现10亿美元的市值</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">8</span>
+                <p>与SpaceX和埃隆·马斯克的合作</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">9</span>
+                <p>实现1万亿美元的市值</p>
+              </div>
+              <div class="roadmap-item">
+                <span class="roadmap-point">10</span>
+                <p>将实物硬币发射到太空并保护地球</p>
+              </div>
+            </div>
           </div>
-          <div class="roadmap-item">
-            <span class="roadmap-point">5</span>
-            <p>Achievement of $1 million market capitalization</p>
-          </div>
-          <div class="roadmap-item">
-            <span class="roadmap-point">6</span>
-            <p>Introduction of gaming processes and achievement of $10 million market capitalization</p>
-          </div>
-          <div class="roadmap-item">
-            <span class="roadmap-point">7</span>
-            <p>Listing on the first centralized exchange (CEX) and achievement of $1 billion market capitalization</p>
-          </div>
-          <div class="roadmap-item">
-            <span class="roadmap-point">8</span>
-            <p>Partnership with SpaceX and Elon Musk</p>
-          </div>
-          <div class="roadmap-item">
-            <span class="roadmap-point">9</span>
-            <p>Achievement of $1 trillion market capitalization</p>
-          </div>
-          <div class="roadmap-item">
-            <span class="roadmap-point">10</span>
-            <p>Launch of a physical coin into space and protection of the planet</p>
-          </div>
-        </div>
-      </div>
+        </section>
+    </div>
+    
     </section>
   </div>
 
@@ -145,9 +316,7 @@
         <img src="icons/icon4.png" alt="Icon 2" class="icon-btn-image">
     </a>
 </div>
-
-
-  <script src="language.js"></script>
+  <script src="app.js"></script>
   <script src="background.js"></script>
 </body>
 </html>

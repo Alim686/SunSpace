@@ -428,22 +428,7 @@ ul, ol {
     z-index: 3;
 }
 
-.language-options {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    z-index: 2;
-    transition: all 0.4s ease;
-    opacity: 0;
-    overflow: hidden;
-    border-radius: 50%;
-    background: radial-gradient(circle, #096694, #17aaff);
-}
+
 
 .language-options.expanded {
     width: 200px;
@@ -512,6 +497,10 @@ ul, ol {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 12px 24px rgba(0, 0, 0, 0.3); /* Усиленный 3D-эффект */
 }
 
+.language-options:hover{
+    background: radial-gradient(circle, #17aaff, #096694);
+}
+
 .language-options.expanded {
     width: 300px; /* Меняем ширину на большее значение */
     height: 50px;
@@ -552,7 +541,9 @@ ul, ol {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 12px 24px rgba(0, 0, 0, 0.3); /* Усиленный 3D-эффект */
 }
 
-
+.language-:hover{
+    background: radial-gradient(circle, #17aaff, #096694);
+}
 
 .lang-option {
     display: flex;
