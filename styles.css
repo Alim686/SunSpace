@@ -243,7 +243,7 @@ ul, ol {
 .custom-number {
     width: 30px;
     height: 30px;
-    background-color: #005091; /* Ваш стиль */
+    background: radial-gradient(circle, #096694, #17aaff);
     border-radius: 50%;
     display: flex;
     align-items: center;
